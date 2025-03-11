@@ -1,0 +1,41 @@
+@import url('https://rsms.me/inter/inter.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@supports (backdrop-filter: blur(10px)) or (-webkit-backdrop-filter: blur(10px)) {
+  .backdrop-blur {
+    backdrop-filter: blur(1px);
+    -webkit-backdrop-filter: blur(1px);
+  }
+}
+
+
+@font-face {
+  font-family: 'Nasalization';
+  src: url('/fonts/nasalization.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+:root {
+  --background: #0A0A0A;
+  --foreground: #F0E7FF;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.glowing {
+  font-family: 'Nasalization', sans-serif;
+  font-weight: 100;
+  text-shadow:
+    0 0 16px rgba(16, 0, 44, 0.05),
+    0 0 12px rgb(184, 174, 255);
+}
